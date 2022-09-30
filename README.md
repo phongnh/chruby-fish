@@ -4,18 +4,18 @@ Like chruby but for Fish shell.
 
 # Usage
 
-Clone project
+Manual install
 
 ```
 git clone https://github.com/phongnh/chruby-fish.git ~/.chruby-fish
+cp ~/.chruby-fish/conf.d/*.fish ~/.config/fish/conf.d/
+cp ~/.chruby-fish/functions/*.fish ~/.config/fish/functions/
 ```
 
-
-Add the following lines to your `~/.config/fish/config.fish`
+Install with [fisher](https://github.com/jorgebucaran/fisher)
 
 ```
-source ~/.chruby-fish/chruby.fish
-source ~/.chruby-fish/auto.fish
+fisher add phongnh/chruby-fish
 ```
 
 # Credits
