@@ -1,4 +1,4 @@
-set CHRUBY_VERSION '0.1.0'
+set -g CHRUBY_VERSION '0.1.0'
 
 set -ge RUBIES
 test -d "$PREFIX/opt/rubies" ;and set -gx RUBIES $RUBIES "$PREFIX"/opt/rubies/*

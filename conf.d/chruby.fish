@@ -30,4 +30,7 @@ function chruby_auto --on-variable PWD -d 'Auto switch ruby version'
     end
 end
 
-chruby_auto
+function __chruby_auto_init --on-event fish_prompt
+    chruby_auto
+    functions --erase __chruby_auto_init
+end
